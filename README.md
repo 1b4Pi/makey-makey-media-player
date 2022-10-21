@@ -1,4 +1,4 @@
-# MakeyMakey Media Player (makey-makey-media-player)
+# MakeyMakey Media Player Installation
 
 A DGD-365 Application
 
@@ -42,19 +42,20 @@ yarn global add @quasar/cli
 ```
 
 
-## Step 4: Download and store the code for this app
+## Step 4: Download and install the code for this app
 
 On a Mac, you should have a folder called Sites inside your home directory, where the Desktop, Documents, and Downloads folders are located. If you don't have a folder called Sites here, make one.
 
-Download the .zip file for the app, and move the uncompressed folder into your Sites directory.
+Locate the **code** dropdown button at the top of this page and download the .zip file and move the uncompressed folder into your Sites directory.
 
 Open a new terminal window and type the following command and press Enter/Return:
-```bash
 
+```bash
 cd Sites/immersive-spaces
 ```
 
 You are now inside the immersive-spaces folder. Run the following command to install the app:
+
 ```bash
 yarn
 ```
@@ -66,3 +67,18 @@ Make sure your Terminal window is inside the **immersive-spaces** folder (read s
 ```bash
 quasar dev
 ```
+
+# Remap your MakeyMakey
+
+Follow this guide to remap your MakeyMakey inputs to use lowercase alphabet letters, starting with **a**. Your second input should be **b**. The third is **c**, and so on. You can take advantage of the back of the board to remap up to 18 inputs, which is the keyboard letter **r**.
+
+# Customizing the MakeyMakey Media Player
+
+Video files, and poster frames for each video file, are located in the **src/assets** folder.
+
+This folder contains 18 videos with 18 poster frames. Each video & poster frame corresponds to a potential MakeyMakey input.
+
+Update the media:
+-Name your video and JPG files in the same manner as those in the src/assets/ folder and replace the old files with your new ones.
+
+**Make sure to refresh your browser to see the changes!**
