@@ -2,42 +2,67 @@
 
 A DGD-365 Application
 
-## Install the dependencies
+## Step 1: Install Node.js
+
+*As an asynchronous event-driven JavaScript runtime, Node.js is designed to build scalable network applications.*
+
+Download the LTS version of [Node.js] (https://nodejs.org/)
+
+## Step 2: Activate Yarn
+
+*Yarn is a package manager for your code. It allows you to use and share code with other developers from around the world.*
+
+### On Mac:
+
+Open the /Applications/Utilities folder, then double-click Terminal.
+
+### On PC:
+
+1. Press the Start taskbar button.
+2. Select All apps on the Start menu.
+3. Scroll down the Start menu to the Windows Terminal app shown directly below.
+4. Then click Windows Terminal there to open it. Alternatively, right-click it and select More > Run as administrator.
+
+### Now that Terminal is open
+
+Type the following in Terminal and press the Enter/Return key to activate Yarn:
 
 ```bash
-yarn
-# or
-npm install
+corepack enable
 ```
 
-### Start the app in development mode (hot-code reloading, error reporting, etc.)
+## Step 3: Install Quasar
+
+*Quasar is an MIT licensed open-source Vue.js based framework, which allows you as a web developer to quickly create responsive websites/apps in many flavors*
+
+In your Terminal window, type the following command and press the Enter/Return key:
+
+```bash
+yarn global add @quasar/cli
+```
+
+
+## Step 4: Download and store the code for this app
+
+On a Mac, you should have a folder called Sites inside your home directory, where the Desktop, Documents, and Downloads folders are located. If you don't have a folder called Sites here, make one.
+
+Download the .zip file for the app, and move the uncompressed folder into your Sites directory.
+
+Open a new terminal window and type the following command and press Enter/Return:
+```bash
+
+cd Sites/immersive-spaces
+```
+
+You are now inside the immersive-spaces folder. Run the following command to install the app:
+```bash
+yarn
+```
+
+### Step 5: Start the app in development mode (hot-code reloading, error reporting, etc.)
+
+Make sure your Terminal window is inside the **immersive-spaces** folder (read step above)
 
 ```bash
 quasar dev
 ```
-
-### Lint the files
-
-```bash
-yarn lint
-# or
-npm run lint
-```
-
-### Format the files
-
-```bash
-yarn format
-# or
-npm run format
-```
-
-### Build the app for production
-
-```bash
-quasar build
-```
-
-### Customize the configuration
-
-See [Configuring quasar.config.js](https://v2.quasar.dev/quasar-cli-vite/quasar-config-js).
